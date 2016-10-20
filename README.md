@@ -3,13 +3,21 @@ hyper-replace
 =============
 
 The point of `hyper-replace` is to be able to replace patterns in
-strings by things that aren't strings, for example virtual-dom or
-React nodes. Its return value is thus an array of string parts
-interspersed with arbitrary objects.
+strings by things that aren't strings. Here are a few things
+`hyper-replace` can help you with:
 
-`hyper-replace` is also powerful enough to apply regular expressions
-to mixed arrays of strings and objects (which means that you can
-compose calls to it).
+* Replace all occurrences of a pattern (a hashtag, a youtube URL,
+  etc.) in a comment by a React component. `hyper-replace` will return
+  a suitable array of children. This will, of course, work just as
+  well for other frameworks!
+* Parse simple markup to a structure, for example Markdown to
+  virtual-dom, instead of outputting a string in a specific format
+  like HTML.
+
+`hyper-replace` returns an array of string parts interspersed with
+arbitrary objects. It is also powerful enough to apply regular
+expressions to that same data structure, which means that you can
+compose calls to it.
 
 ## Basic usage
 
