@@ -1,0 +1,24 @@
+{
+  "name": "hyper-replace",
+  "description": "Replace patterns in strings by arbitrary objects",
+  "version": "0.1.0",
+  "format": "cjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/breuleux/hyper-replace"
+  },
+  "keywords": [],
+  "author": "Olivier Breuleux",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "earlgrey": ">=0.0.14",
+    "mocha": "^3.1.2",
+    "earl-mocha": ">=0.0.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
